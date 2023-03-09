@@ -32,7 +32,7 @@ public class Product {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private Date productCreateDate;
     @Column(name = "productStatus")
-    private Boolean productStatus;
+    private boolean productStatus;
     @ManyToOne
     @JoinColumn(name = "User")
     private User user;
